@@ -1,6 +1,6 @@
 ## Install
 
-Now install dependencies by running this command in the newly created library.
+Now install dependencies by running this command in the newly created interview task.
 
 ```
 npm install
