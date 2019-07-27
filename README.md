@@ -6,7 +6,7 @@ Now install dependencies by running this command in the newly created library.
 npm install
 ```
 
-For iOS:
+## For iOS:
 
 Extra installation step needed on React Native 0.60(+)
 
@@ -20,7 +20,7 @@ Then to run on iOS:
 react-native run-ios
 ```
 
-For Android:
+## For Android:
 
 It is *recommended* to start the Metro Bundler manually, which would run in the foreground:
 
