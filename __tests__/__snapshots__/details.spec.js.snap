@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "lightgray",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2089dc",
+        "borderBottomColor": "#f2f2f2",
+        "borderBottomWidth": 0.5,
+        "flexDirection": "row",
+        "height": 64,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 10,
+        "paddingTop": 20,
+      }
+    }
+  >
+    <Image
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": 64,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+      testID="headerContainer"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 3,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#2089dc",
+                "borderColor": "#2089dc",
+                "borderRadius": 3,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginHorizontal": 5,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "white",
+                        "fontSize": 36,
+                      },
+                      Object {
+                        "backgroundColor": "transparent",
+                      },
+                      Object {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                  testID="iconIcon"
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 3,
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#fff",
+          }
+        }
+        text="Test"
+        theme={
+          Object {
+            "colors": Object {
+              "disabled": "hsl(208, 8%, 90%)",
+              "divider": "#bcbbc1",
+              "error": "#ff190c",
+              "grey0": "#393e42",
+              "grey1": "#43484d",
+              "grey2": "#5e6977",
+              "grey3": "#86939e",
+              "grey4": "#bdc6cf",
+              "grey5": "#e1e8ee",
+              "greyOutline": "#bbb",
+              "platform": Object {
+                "android": Object {
+                  "error": "#f44336",
+                  "primary": "#2196f3",
+                  "secondary": "#9C27B0",
+                  "success": "#4caf50",
+                  "warning": "#ffeb3b",
+                },
+                "ios": Object {
+                  "error": "#ff3b30",
+                  "primary": "#007aff",
+                  "secondary": "#5856d6",
+                  "success": "#4cd964",
+                  "warning": "#ffcc00",
+                },
+              },
+              "primary": "#2089dc",
+              "searchBg": "#303337",
+              "secondary": "#8F0CE8",
+              "success": "#52c41a",
+              "warning": "#faad14",
+            },
+          }
+        }
+      >
+        Test
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+          }
+        }
+      >
+        <View
+          icon="search"
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "justifyContent": "center",
+            }
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "disabled": "hsl(208, 8%, 90%)",
+                "divider": "#bcbbc1",
+                "error": "#ff190c",
+                "grey0": "#393e42",
+                "grey1": "#43484d",
+                "grey2": "#5e6977",
+                "grey3": "#86939e",
+                "grey4": "#bdc6cf",
+                "grey5": "#e1e8ee",
+                "greyOutline": "#bbb",
+                "platform": Object {
+                  "android": Object {
+                    "error": "#f44336",
+                    "primary": "#2196f3",
+                    "secondary": "#9C27B0",
+                    "success": "#4caf50",
+                    "warning": "#ffeb3b",
+                  },
+                  "ios": Object {
+                    "error": "#ff3b30",
+                    "primary": "#007aff",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "warning": "#ffcc00",
+                  },
+                },
+                "primary": "#2089dc",
+                "searchBg": "#303337",
+                "secondary": "#8F0CE8",
+                "success": "#52c41a",
+                "warning": "#faad14",
+              },
+            }
+          }
+          underlayColor="white"
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#fff",
+                  "fontSize": 24,
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+            testID="iconIcon"
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "#e1e8ee",
+        "borderWidth": 1,
+        "flex": 1,
+        "flexDirection": "column",
+        "margin": 0,
+        "marginBottom": 0,
+        "padding": 0,
+        "shadowColor": "rgba(0,0,0, .2)",
+        "shadowOffset": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#43484d",
+              "fontSize": 17.5,
+              "fontWeight": "bold",
+              "marginBottom": 15,
+              "marginTop": 15,
+              "textAlign": "center",
+            }
+          }
+          testID="cardTitle"
+          theme={
+            Object {
+              "colors": Object {
+                "disabled": "hsl(208, 8%, 90%)",
+                "divider": "#bcbbc1",
+                "error": "#ff190c",
+                "grey0": "#393e42",
+                "grey1": "#43484d",
+                "grey2": "#5e6977",
+                "grey3": "#86939e",
+                "grey4": "#bdc6cf",
+                "grey5": "#e1e8ee",
+                "greyOutline": "#bbb",
+                "platform": Object {
+                  "android": Object {
+                    "error": "#f44336",
+                    "primary": "#2196f3",
+                    "secondary": "#9C27B0",
+                    "success": "#4caf50",
+                    "warning": "#ffeb3b",
+                  },
+                  "ios": Object {
+                    "error": "#ff3b30",
+                    "primary": "#007aff",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "warning": "#ffcc00",
+                  },
+                },
+                "primary": "#2089dc",
+                "searchBg": "#303337",
+                "secondary": "#8F0CE8",
+                "success": "#52c41a",
+                "warning": "#faad14",
+              },
+            }
+          }
+        >
+          Test
+        </Text>
+      </View>
+      <View>
+        <View
+          accessibilityIgnoresInvertColors={true}
+          style={
+            Array [
+              Object {
+                "height": 150,
+                "width": null,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1518711/910/607/m1/fpnw/wm0/lawyer-avatar-icon-01-.jpg?1470209857&s=89c9e32338a33862d93a44b76a1ae3e9",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "borderRadius": 3,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#2089dc",
+                    "borderColor": "#2089dc",
+                    "borderRadius": 0,
+                    "borderWidth": 0,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "padding": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontSize": 18,
+                      "paddingBottom": 1,
+                      "paddingTop": 2,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  VIEW NOW
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

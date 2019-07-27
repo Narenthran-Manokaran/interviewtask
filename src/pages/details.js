@@ -2,10 +2,11 @@ import React,{ Component } from 'react';
 import { View, Text, StyleSheet, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import { Header, Button, Card } from 'react-native-elements';
+import generateImage from './../utils/generateImage';
 
 let styles;
 
-class Home extends Component {
+export class Details extends Component {
   constructor(props, context) {
     super(props, context);
   }
@@ -17,16 +18,6 @@ class Home extends Component {
         onPress={() => this.props.navigation.goBack()}
       />
     )
-  }
-
-  generateImage(image) {
-    if (image.media && image.media[0] && image.media[0]['media-metadata'] && image.media[0]['media-metadata'][2] && image.media[0]['media-metadata'][2].url) {
-      return image.media[0]['media-metadata'][2].url;
-    }
-    if (image.multimedia && image.multimedia[2] && image.multimedia[2].url) {
-      return image.multimedia[2].url;
-    }
-    return 'https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1518711/910/607/m1/fpnw/wm0/lawyer-avatar-icon-01-.jpg?1470209857&s=89c9e32338a33862d93a44b76a1ae3e9';
   }
 
   render() {
@@ -45,7 +36,7 @@ class Home extends Component {
         <Card
           title={params.title}
           containerStyle={card}
-          image={{ uri: this.generateImage(params) }}>
+          image={{ uri: generateImage(params) }}>
           <Text style={{marginBottom: 10}}>{params.abstract}</Text>
           <Button
             backgroundColor='#03A9F4'
@@ -114,10 +105,10 @@ styles = StyleSheet.create({
   }
 })
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
   return {
     appData: state.appData
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Details)

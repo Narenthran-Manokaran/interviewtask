@@ -11,7 +11,7 @@ import styles from './sideMenu.style';
 const URI = 'https://api.nytimes.com/svc';
 const API_KEY = 'api-key=okVdEHSsZSsT6Pluu48AAa35wmjr3BNj';
 
-class SideMenu extends Component {
+export class SideMenu extends Component {
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
       routeName: route.routeName
@@ -31,9 +31,6 @@ class SideMenu extends Component {
         <ScrollView>
           <View>
             {items.map((item, index) => {
-                if (!item.params.title) {
-                  return false;
-                }
                 return (
                   <ListItem
                     key={index}
@@ -61,13 +58,13 @@ SideMenu.propTypes = {
   navigation: PropTypes.object
 };
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
     return {
       appData: state.appData
     }
   }
   
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     fetchData: (uri) => dispatch(fetchData(uri))
   }
