@@ -1,4 +1,4 @@
-## Install dependencies
+## Install dependencies:
 
 Now install dependencies by running this command in the newly created interview task.
 
