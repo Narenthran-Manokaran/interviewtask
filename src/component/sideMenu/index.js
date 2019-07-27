@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
 import { connect } from 'react-redux';
-import { ListItem } from 'react-native-elements';
+import { ListItem, Button } from 'react-native-elements';
+import RNExitApp from 'react-native-exit-app';
 import { fetchData } from './../../actions';
 import styles from './sideMenu.style';
 
@@ -46,7 +47,10 @@ class SideMenu extends Component {
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
-          <Text>This is my fixed footer</Text>
+          <Button
+            title="Sign Out"
+            onPress={() => RNExitApp.exitApp() }
+          />
         </View>
       </View>
     );
