@@ -69,7 +69,6 @@ styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'lightgray',
-    paddingBottom: AppHeader.HEIGHT + 20
   },
   loadingContainer: {
     justifyContent: 'center',
