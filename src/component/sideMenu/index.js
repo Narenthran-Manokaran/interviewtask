@@ -8,9 +8,6 @@ import RNExitApp from 'react-native-exit-app';
 import { fetchData } from './../../actions';
 import styles from './sideMenu.style';
 
-const URI = 'https://api.nytimes.com/svc';
-const API_KEY = 'api-key=okVdEHSsZSsT6Pluu48AAa35wmjr3BNj';
-
 export class SideMenu extends Component {
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
@@ -18,10 +15,6 @@ export class SideMenu extends Component {
     });
     this.props.navigation.dispatch(navigateAction);
     this.props.fetchData(route.params.uri);
-  }
-
-  componentDidMount() {
-    this.props.fetchData(`${URI}/mostpopular/v2/viewed/1.json?${API_KEY}`);
   }
 
   render () {

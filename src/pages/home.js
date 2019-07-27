@@ -1,11 +1,12 @@
 import React,{ Component } from 'react';
-import { TouchableOpacity, View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import { Header, Button, Avatar, Icon, Card } from 'react-native-elements';
+import { Header, Button } from 'react-native-elements';
 import { DrawerActions, Header as AppHeader } from 'react-navigation';
 import { NavigationActions } from 'react-navigation';
-import generateImage from './../utils/generateImage';
 import renderItem from './renderItem';
+import { NavigationEvents } from "react-navigation";
+import { fetchData } from './../actions';
 
 let styles
 export class Home extends Component {
@@ -49,6 +50,7 @@ export class Home extends Component {
               keyExtractor={this.keyExtractor}
             />
         </View>
+        <NavigationEvents onWillFocus={payload => (payload.action.type !== "Navigation/BACK") && this.props.fetchData(payload.state.params.uri) } />
       </View>
     )
   }  
@@ -125,4 +127,10 @@ export const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchData: (uri) => dispatch(fetchData(uri))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
